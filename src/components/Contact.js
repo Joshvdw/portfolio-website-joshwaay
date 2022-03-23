@@ -47,7 +47,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className='bg-gray px-5 py-10 md:py-8 sm:p-8 my-2 md:rounded-lg shadow-lg  justify-between w-full  md:w-6/12 '>
+        {/* <div className='bg-gray px-5 py-10 md:py-8 sm:p-8 my-2 md:rounded-lg shadow-lg  justify-between w-full  md:w-6/12 '>
           <form className='flex flex-col space-y-3 m-auto w-full' name='contact' method='post'>
             <input type='hidden' name='form-name' value='contact' />
 
@@ -61,14 +61,14 @@ const Contact = () => {
               Send Message
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
       <div className='relative md:bottom-56 mr-auto ml-auto md:mr-auto md:ml-0 max-w-xs md:max-w-sm' onClick={() => window.scroll(0, 0)}>
-        <picture>
+        {/* <picture>
           <source srcSet='./images/rocket-320.webp 320w, ./images/rocket.webp 768w' type='image/webp' />
           <source srcSet='./images/rocket.png' sizes='(min-width: 768px) 50vw, 100vw' type='image/png' />
           <img width='500px' height='500px' loading='lazy' alt='red rocket flying' />
-        </picture>
+        </picture> */}
       </div>
     </section>
   );

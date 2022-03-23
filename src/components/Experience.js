@@ -1,17 +1,17 @@
 import React from 'react'
-import workHistory from '../ExData'
+// import workHistory from '../ExData'
 import './style.ex.css'
 function Experience() {
     return (
         <div id="Experience">
-            <section className='my-28 px-5' id='projects'>
+            {/* <section className='my-28 px-5' id='projects'>
                 <header className='text-2xl font-bold pt-10'>
                     <h2>Experience</h2>
                 </header>
                 <div className=''>
                     <div className="main-cont">
                         <section id="cd-timeline" className="cd-container">
-                            {/*  */}
+            
                             {workHistory && workHistory.map((work) => (
                                 <div className="cd-timeline-block">
                                     <div className="cd-timeline-img cd-picture"></div>
@@ -56,7 +56,7 @@ function Experience() {
                         </section>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     )
 }
