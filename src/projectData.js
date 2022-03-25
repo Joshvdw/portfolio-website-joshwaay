@@ -52,7 +52,7 @@ const projects = [
   },
   {
     title: 'Tourism NZ Booking App',
-    image: './images/projects/booking-app.jpg',
+    image: ['./images/projects/booking-app.jpg', './images/projects/booking-app-2.jpg', './images/projects/booking-app-3.jpg'],
     description: "Web app that allows users to book accommodation in Queenstown from the few selected options available.",
     tools: ['Google Maps API', 'jQuery', 'Bootstrap', 'SASS'],
     github: 'https://github.com/Joshvdw/Tourism-NZ-Booking-App',

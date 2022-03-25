@@ -2,22 +2,44 @@ import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
-const fadeImages = [
-  {
-  url: './images/projects/ticket-trade.png'
-  },
-  {
-  url: './images/projects/toughlove.png'
-  },
-  {
-  url: './images/projects/booking-app.jpg'
-  },
-];
 
-const Slideshow = () => {
+const Slideshow = (props) => {
+  
+  const { image, title } = props.props
+  console.log(image, title)
+  
+  const fadeImages = [
+    {
+    url: image[0]
+    },
+    {
+    url: image[1]
+    },
+    {
+    url: image[2]
+    },
+  ];
+  // function imageUrls () {
+  //   let url = {}
+  //    for (let i = 0; i < image.length; i++) {
+  //       url = image
+  //     }
+  // }
+
+  //   const fadeImages = [
+  //     url = imageUrls()
+  //   ]
+  
+    const properties = {
+      arrows: false,
+      duration: 2500,
+      transitionDuration: 500,
+      Easing: 'cubic'
+    }
+    
   return (
     <div className="slide-container">
-      <Fade>
+      <Fade {...properties}>
         {fadeImages.map((fadeImage, index) => (
           <div className="each-fade" key={index}>
             <div className="image-container">

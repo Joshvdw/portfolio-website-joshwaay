@@ -6,7 +6,7 @@ import { GITHUB_USERNAME } from '../root.link';
 const Project = () => {
   return (
     <div id="Projects">
-      <section className='my-28 px-5' id='projects'>
+      <section className='mt-28 mb-16 px-5' id='projects'>
         <header className='text-2xl font-bold pt-10'>
           <h2>Projects</h2>
         </header>
@@ -15,7 +15,7 @@ const Project = () => {
             <article className='flex flex-wrap md:justify-between md:items-center' key={index}>
               <picture className={index % 2 === 0 ? 'w-full md:w-6/12 shadow-lg ' : 'w-full md:w-6/12 shadow-lg md:order-1'}>
                 {/* <img src={project.image} alt={project.title} /> */}
-                <Slideshow />
+                <Slideshow props={project}/>
               </picture>
               <div className='flex flex-col overflow-auto  space-y-3 my-3 mx-1 w-full md:w-5/12 '>
                 <h3 className='uppercase font-bold text-lg project-titles'>{project.title}</h3>

@@ -3,7 +3,7 @@
 New Styles
 
 -------------------------------- */
-@import "react-slideshow-image/dist/styles.css";
+/* @import "react-slideshow-image/dist/styles.css"; */
 
 /* CTA-BTNS */
 .contact-btn {
@@ -18,6 +18,9 @@ New Styles
   /* border-radius: 5%; */
 }
 
+.default-nav {
+  display: hidden!important;
+}
 
 .main-cont {
   /* background-color: #222c32; */
