@@ -1,3 +1,23 @@
+/* -------------------------------- 
+
+New Styles
+
+-------------------------------- */
+@import "react-slideshow-image/dist/styles.css";
+
+/* CTA-BTNS */
+.contact-btn {
+  background-color: #673ab7;
+  padding: .5em;
+  /* border-radius: 5%; */
+}
+
+.resume-btn {
+  background-color: #cc2c2c;
+  padding: .5em;
+  /* border-radius: 5%; */
+}
+
 
 .main-cont {
   /* background-color: #222c32; */
@@ -260,5 +280,11 @@ Main components
     left: auto;
     right: 122%;
     text-align: right;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-titles {
+    padding-top: 10px;
   }
 }

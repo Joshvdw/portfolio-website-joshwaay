@@ -1,4 +1,5 @@
 import React from 'react';
+import Slideshow from './Slideshow';
 import projects from '../projectData';
 import { GITHUB_USERNAME } from '../root.link';
 
@@ -13,10 +14,11 @@ const Project = () => {
           {projects.map((project, index) => (
             <article className='flex flex-wrap md:justify-between md:items-center' key={index}>
               <picture className={index % 2 === 0 ? 'w-full md:w-6/12 shadow-lg ' : 'w-full md:w-6/12 shadow-lg md:order-1'}>
-                <img src={project.image} alt={project.title} />
+                {/* <img src={project.image} alt={project.title} /> */}
+                <Slideshow />
               </picture>
               <div className='flex flex-col overflow-auto  space-y-3 my-3 mx-1 w-full md:w-5/12 '>
-                <h3 className='uppercase font-bold text-lg'>{project.title}</h3>
+                <h3 className='uppercase font-bold text-lg project-titles'>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className='flex overflow-auto space-x-3 pb-2 md:flex-wrap'>
                   {project.tools.map((disc, index) => (
@@ -28,6 +30,9 @@ const Project = () => {
                 <div className='w-auto flex space-x-5 relative '>
                   <a href={project.github} target='_blank' rel='noreferrer'>
                     <img src='./images/icons/github.svg' alt='link to github page' width='24px' height='24px' />
+                  </a>
+                  <a href={project.behance} target='_blank' rel='noreferrer'>
+                    <img src='./images/icons/behance.svg' alt='link to behance page' width='24px' height='24px' />
                   </a>
                   <a href={project.link} target='_blank' rel='noreferrer'>
                     <img src='./images/icons/external-link.svg' alt='link to live website' width='24px' height='24px' />

@@ -27,6 +27,7 @@ const Hero = () => {
         <p className='tracking-wide leading-relaxed'>
           {FRONT_PAGE_DESC}{' '}
         </p>
+        <button className='contact-btn'>Contact</button>
       </div>
     </section>
   );
