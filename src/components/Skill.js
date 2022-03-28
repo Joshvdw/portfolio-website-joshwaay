@@ -22,6 +22,8 @@ const Skill = () => {
           </div>
         </div>
       }
+      <br/>
+      <hr className='mt-6 mb-12 opacity-70'/>
       </section>
     </div>
   );

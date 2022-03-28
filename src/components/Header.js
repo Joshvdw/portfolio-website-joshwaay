@@ -16,8 +16,8 @@ const Header = () => {
           </a>
         </li>
         <li>
-          <a href='#About' className='py-1 px-1 hover:bg-gray focus:bg-gray rounded-lg'>
-            About
+          <a href='#Contact' className='py-1 px-1 hover:bg-gray focus:bg-gray rounded-lg'>
+            Contact
           </a>
         </li>
         {/* <li>

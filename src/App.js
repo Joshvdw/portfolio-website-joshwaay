@@ -20,7 +20,7 @@ function App() {
         </div>
       }
     >
-      <div className='App container my-10 mx-auto max-w-screen-lg bg-black'>
+      <div className='App container mt-10 mx-auto max-w-screen-lg bg-black'>
         <Header />
         <main>
           <Hero />

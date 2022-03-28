@@ -20,7 +20,7 @@ const projects = [
       }
     ],
     description: 'An interactive storybook / point-and-click adventure game to get kids thinking about some important "human-skill" concepts. This was our final project for Enspiral Dev Academy and I worked in a team using Gitflow. I was primarily in charge of the React Components and state management using Redux, as well as some of the more creative aspects such as the music and sound effects.',
-    tools: ['React / Redux', 'Node', 'Express', 'SASS'],
+    tools: ['React / Redux', 'Node', 'Express'],
     github: 'https://github.com/Joshvdw/torotoro',
     behance: 'https://behance.net/gallery/133579459/Torotoro',
     link: 'https://torotoro.herokuapp.com/',
@@ -121,7 +121,7 @@ const projects = [
       }
     ],
     description: "Web app that allows users to book accommodation in Queenstown from the few selected options available. This project was a Summative assignment for Yoobee Colleges to practice using APIs.",
-    tools: ['Maps API', 'jQuery', 'Bootstrap', 'SASS'],
+    tools: ['Maps API', 'JS', 'Bootstrap', 'SASS'],
     github: 'https://github.com/Joshvdw/Tourism-NZ-Booking-App',
     behance: 'https://www.behance.net/gallery/109211249/Queenstown-Accommodation-Booking-Website'
   },
