@@ -1,26 +1,33 @@
 /* -------------------------------- 
-
 New Styles
-
 -------------------------------- */
-/* @import "react-slideshow-image/dist/styles.css"; */
 
 /* CTA-BTNS */
 .contact-btn {
-  background-color: #673ab7;
-  padding: .5em;
-  /* border-radius: 5%; */
+  background-color: #8c44c0;
+  padding: .5em .75em;
+  border-radius: 2%;
 }
 
 .resume-btn {
-  background-color: #cc2c2c;
-  padding: .5em;
-  /* border-radius: 5%; */
+  background-color: #e64c49;
+  padding: .5em .75em;
+  border-radius: 2%;
+}
+
+.behance-icon {
+  width: 24px;
+  opacity: 0.95;
 }
 
 .default-nav {
   display: hidden!important;
 }
+
+.image-container img {
+  border-radius: 2%;
+}
+
 
 .main-cont {
   /* background-color: #222c32; */
@@ -291,3 +298,4 @@ Main components
     padding-top: 10px;
   }
 }
+

@@ -7,6 +7,7 @@ const Skill = () => {
     <section className='my-28  px-5'>
       <header className='text-2xl font-bold pt-10 mb-5 pb-3'>
         <h2>Skills & Tools</h2>
+        <hr className='my-5 opacity-70'/>
       </header>
       {Proficient?.length > 0 &&
         <div className=''>

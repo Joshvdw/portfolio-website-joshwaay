@@ -6,16 +6,16 @@ import { GITHUB_USERNAME } from '../root.link';
 const Project = () => {
   return (
     <div id="Projects">
-      <section className='mt-28 mb-16 px-5' id='projects'>
+      <section className='mt-48 mb-16 px-5' id='projects'>
         <header className='text-2xl font-bold pt-10'>
           <h2>Projects</h2>
+          <hr className='mt-5 mb-12 opacity-70'/>
         </header>
         <div className='my-7 space-y-24'>
           {projects.map((project, index) => (
             <article className='flex flex-wrap md:justify-between md:items-center' key={index}>
               <picture className={index % 2 === 0 ? 'w-full md:w-6/12 shadow-lg ' : 'w-full md:w-6/12 shadow-lg md:order-1'}>
-                {/* <img src={project.image} alt={project.title} /> */}
-                <Slideshow props={project}/>
+                <Slideshow project={project}/>
               </picture>
               <div className='flex flex-col overflow-auto  space-y-3 my-3 mx-1 w-full md:w-5/12 '>
                 <h3 className='uppercase font-bold text-lg project-titles'>{project.title}</h3>
@@ -28,26 +28,28 @@ const Project = () => {
                   ))}
                 </div>
                 <div className='w-auto flex space-x-5 relative '>
+                  <a href={project.behance} target='_blank' rel='noreferrer'>
+                    <img src='./images/icons/behance.svg' alt='link to behance page' width='24px' height='24px' className='behance-icon'/>
+                  </a>
                   <a href={project.github} target='_blank' rel='noreferrer'>
                     <img src='./images/icons/github.svg' alt='link to github page' width='24px' height='24px' />
                   </a>
-                  <a href={project.behance} target='_blank' rel='noreferrer'>
-                    <img src='./images/icons/behance.svg' alt='link to behance page' width='24px' height='24px' />
-                  </a>
+                  {project.link &&
                   <a href={project.link} target='_blank' rel='noreferrer'>
                     <img src='./images/icons/external-link.svg' alt='link to live website' width='24px' height='24px' />
                   </a>
+                  }
                 </div>
               </div>
             </article>
           ))}
         </div>
       </section>
-      <div className='mx-5'>
+      {/* <div className='mx-5'>
         <a href={`https://github.com/${GITHUB_USERNAME}`} target='_blank' rel='noreferrer' className='bg-gray block shadow-lg uppercase border border-gray-500 rounded-lg text-center my-12 p-2 max-w-xs m-auto'>
           <span>See more on Github</span>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
