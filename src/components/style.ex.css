@@ -3,16 +3,17 @@ New Styles
 -------------------------------- */
 
 /* CTA-BTNS */
-.contact-btn {
+/* .contact-btn {
   background-color: #8c44c0;
   padding: .5em .75em;
   border-radius: 2%;
-}
+} */
 
 .resume-btn {
   background-color: #e64c49;
   padding: .5em .75em;
   border-radius: 2%;
+  margin-right: .75rem;
 }
 
 .behance-icon {
@@ -294,9 +295,13 @@ Main components
   } 
 /* }  */
 
+/* TABLET/MOBILE SIZE */
 @media only screen and (max-width: 768px) {
   .project-titles {
     padding-top: 10px;
+  }
+  .project-img {
+    padding: 0;
   }
 }
 

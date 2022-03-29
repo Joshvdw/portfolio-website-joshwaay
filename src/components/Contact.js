@@ -2,16 +2,16 @@ import React from 'react';
 import { ADDRESS, EMAIL_ID, PHONE, FIRST_NAME, GITHUB_USERNAME, LAST_NAME, LINKEDIN_USERNAME } from '../root.link'
 const Contact = () => {
   return (
-    <section className='mb-24 flex' id='contact'>
-      <div className='w-3/6'>
-        <img src='./images/bio-pic.jpg' alt='Josh Waay Profile Pic' className='rounded-full w-6/12 h-4/6 opacity-90 m-auto mt-14'></img>
+    <section className='mb-32 flex flex-wrap md:justify-between md:items-center' id='contact'>
+      <div className='w-full md:w-6/12'>
+        <img src='./images/bio-pic.jpg' alt='Josh Waay Profile Pic' className='rounded-full w-6/12 h-4/5 opacity-90 m-auto mt-14'></img>
       </div>
-      <div className='w-3/6'>
+      <div className='w-full md:w-6/12'>
         <header className='px-5 text-2xl font-bold pt-10'>
           <h2>Contact</h2>
           <hr className='mt-2 mb-8 opacity-70'/>
           {/* <br/> */}
-          <p className='text-base font-thin'>Please feel free to reach out to me or connect via one of my socials, I would love to hear your thoughts!</p>
+          <p className='text-base font-thin'>Please feel free to reach out to me or connect via one of my socials, I would love to hear from you!</p>
         </header>
         <div className='md:mx-6 flex flex-col flex-wrap md:flex-row justify-between'>
           <div className='md:px-0 p-5 my-5'>

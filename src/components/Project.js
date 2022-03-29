@@ -14,8 +14,10 @@ const Project = () => {
         <div className='my-7 space-y-24'>
           {projects.map((project, index) => (
             <article className='flex flex-wrap md:justify-between md:items-center' key={index}>
-              <picture className={index % 2 === 0 ? 'w-full md:w-6/12 shadow-lg ' : 'w-full md:w-6/12 shadow-lg md:order-1'}>
-                <Slideshow project={project}/>
+              <picture className={index % 2 === 0 ? 'w-full md:w-6/12 shadow-lg pr-4 project-img' : 'w-full md:w-6/12 shadow-lg md:order-1 pl-4 project-img'}>
+                <a href={project.link ? project.link : project.behance} target='_blank"' rel='noreferrer' className='px-4'>
+                  <Slideshow project={project}/>
+                </a>
               </picture>
               <div className='flex flex-col overflow-auto  space-y-3 my-3 mx-1 w-full md:w-5/12 '>
                 <h3 className='uppercase font-bold text-lg project-titles'>{project.title}</h3>
@@ -27,10 +29,12 @@ const Project = () => {
                     </span>
                   ))}
                 </div>
-                <div className='w-auto flex space-x-5 relative '>
+                <div className='w-auto flex space-x-5 relative pl-1'>
+                  {project.behance &&
                   <a href={project.behance} target='_blank' rel='noreferrer'>
                     <img src='./images/icons/behance.svg' alt='link to behance page' width='24px' height='24px' className='behance-icon'/>
                   </a>
+                  }
                   <a href={project.github} target='_blank' rel='noreferrer'>
                     <img src='./images/icons/github.svg' alt='link to github page' width='24px' height='24px' />
                   </a>

@@ -11,8 +11,9 @@ const Slideshow = (props) => {
   
   const properties = {
     arrows: false,
-    duration: 2500,
-    transitionDuration: 500
+    duration: 1500,
+    transitionDuration: 750,
+    pauseOnHover: false
   }
 
   return (

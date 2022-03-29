@@ -3,13 +3,27 @@ const projects = [
     title: 'Lotje McDonald Photography',
     images: [
       {
-        url: './images/projects/lotje-mcdonald.png'
+        url: './images/projects/lotje-mcdonald.jpg'
+      },
+      {
+        url: './images/projects/lotje-mcdonald-2.jpg'
+      },
+      {
+        url: './images/projects/lotje-mcdonald-3.jpg'
+      },
+      {
+        url: './images/projects/lotje-mcdonald-4.jpg'
+      },
+      {
+        url: './images/projects/lotje-mcdonald-5.jpg'
+      },
+      {
+        url: './images/projects/lotje-mcdonald-6.jpg'
       }
     ],
-    description: "A Wordpress site with a custom child theme designed for a professional photographer based in Sale, Australia. This project was paid freelance contract work.",
+    description: "Website built with a custom child theme designed for a professional photographer based in AU. This project was paid freelance contract work.",
     tools: ['Wordpress', 'WooCommerce', 'SEO'],
     github: 'https://github.com/Joshvdw/lotje-mcdonald-photography',
-    behance: 'https://behance.net/joshvdw',
     link: 'https://lotjemcdonaldphotography.com.au',
   },
   {
@@ -17,22 +31,40 @@ const projects = [
     images: [
       {
         url: './images/projects/torotoro.jpg'
+      },
+      {
+        url: './images/projects/torotoro-2.jpg'
+      },
+      {
+        url: './images/projects/torotoro-3.jpg'
+      },
+      {
+        url: './images/projects/torotoro-4.jpg'
+      },
+      {
+        url: './images/projects/torotoro-5.jpg'
       }
     ],
-    description: 'An interactive storybook / point-and-click adventure game to get kids thinking about some important "human-skill" concepts. This was our final project for Enspiral Dev Academy and I worked in a team using Gitflow. I was primarily in charge of the React Components and state management using Redux, as well as some of the more creative aspects such as the music and sound effects.',
+    description: 'An interactive storybook / point-and-click adventure game to get kids thinking about some important "human-skill" concepts.',
     tools: ['React / Redux', 'Node', 'Express'],
     github: 'https://github.com/Joshvdw/torotoro',
     behance: 'https://behance.net/gallery/133579459/Torotoro',
     link: 'https://torotoro.herokuapp.com/',
   },
   {
-    title: 'Prelude - Yoobee Colleges Graduation 2021',
+    title: 'Prelude 2021',
     images: [
       {
-        url: './images/projects/prelude.png' 
+        url: './images/projects/prelude.jpg' 
+      },
+      {
+        url: './images/projects/prelude-2.jpg' 
+      },
+      {
+        url: './images/projects/prelude-3.jpg' 
       }
     ],
-    description: "I was part of the development team that created the graduation website for Yoobee Colleges in 2021. I was nominated to be the dev lead and was mainly in charge of the JavaScript, making sure the data dynamically renders to the DOM.",
+    description: "I was part of the development team that created the graduation website for Yoobee Colleges. I was nominated to be the dev lead & was mainly in charge of the JavaScript, making sure the data dynamically renders to the DOM.",
     tools: ['HTML / CSS', 'JavaScript', 'Figma'],
     github: 'https://github.com/Joshvdw/Prelude-Yoobee-Gradsite',
     behance: 'https://www.behance.net/gallery/122682407/Prelude-Yoobee-Graduation-Site-2021',
@@ -42,25 +74,22 @@ const projects = [
     title: 'Jack Robert Photography',
     images: [
       {
-        url: './images/projects/jack-robert.png'
+        url: './images/projects/jack-robert.jpg'
       },
       {
-        url: './images/projects/jack-robert-2.png'
+        url: './images/projects/jack-robert-2.jpg'
       },
       {
-        url: './images/projects/jack-robert-3.png'
+        url: './images/projects/jack-robert-3.jpg'
       },
       {
-        url: './images/projects/jack-robert-4.png'
+        url: './images/projects/jack-robert-4.jpg'
       },
       {
-        url: './images/projects/jack-robert-5.png'
+        url: './images/projects/jack-robert-5.jpg'
       },
       {
-        url: './images/projects/jack-robert-6.png'
-      },
-      {
-        url: './images/projects/jack-robert-7.png'
+        url: './images/projects/jack-robert-6.jpg'
       }
     ],
     description: "Photography website designed and build from the ground up using a custom Wordpress theme - as well as custom post types, metaboxes, plugins and taxonomies. ",
@@ -72,7 +101,25 @@ const projects = [
     title: 'Ticket Trade',
     images: [
       {
-        url: './images/projects/ticket-trade.png'
+        url: './images/projects/ticket-trade.jpg'
+      },
+      {
+        url: './images/projects/ticket-trade-2.jpg'
+      },
+      {
+        url: './images/projects/ticket-trade-3.jpg'
+      },
+      {
+        url: './images/projects/ticket-trade-4.jpg'
+      },
+      {
+        url: './images/projects/ticket-trade-5.jpg'
+      },
+      {
+        url: './images/projects/ticket-trade-6.jpg'
+      },
+      {
+        url: './images/projects/ticket-trade-7.jpg'
       }
     ],
     description: "A user-generated marketplace app for buying or selling event tickets online. This app allows users to create an account, log in and post or edit their event tickets, as well as view other user's tickets, buy them or leave comments.",
@@ -84,7 +131,16 @@ const projects = [
     title: 'Toughlove Redesign',
     images: [
       {
-        url: './images/projects/toughlove.png'
+        url: './images/projects/toughlove.jpg'
+      },
+      {
+        url: './images/projects/toughlove-2.jpg'
+      },
+      {
+        url: './images/projects/toughlove-3.jpg'
+      },
+      {
+        url: './images/projects/toughlove-4.jpg'
       }
     ],
     description: "A redesign for non-for-profit org, Toughlove. Built using Wordpress with a custom theme, custom post types, taxonomies and admin customisations.",
@@ -136,6 +192,9 @@ const projects = [
       },
       {
         url: './images/projects/earth-tongue-3.jpg'
+      },
+      {
+        url: './images/projects/earth-tongue-4.jpg'
       }
     ],
     description: "Website made for Wellington-based rock band, Earth Tongue. Created to develop my UX / UI design skills and basic programming knowledge.",
