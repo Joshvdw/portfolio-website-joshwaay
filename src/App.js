@@ -1,4 +1,5 @@
 import { lazy, Suspense } from 'react';
+import Fade from 'react-reveal';
 
 const Header = lazy(() => import('./components/Header'));
 const Hero = lazy(() => import('./components/Hero'));
@@ -24,11 +25,19 @@ function App() {
         <Header />
         <main>
           <Hero />
-          <Project />
+          <Fade bottom>
+            <Project />
+          </Fade>
           <About />
-          <Skill />
-          <Contact />
-          <Footer />
+          <Fade left>
+            <Skill />
+          </Fade>
+          <Fade right>
+            <Contact />
+          </Fade>
+          <Fade bottom>
+            <Footer />
+          </Fade>
         </main>
       </div>
     </Suspense>

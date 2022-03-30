@@ -14,27 +14,28 @@ const Header = () => {
   //   e.preventDefault()
   //   console.log('Button Worked');
   // }
+  
   return (
     <>
     <nav className='space-x-10' id='Header'>
-      <ul className='flex flex-row space-x-4 md:space-x-5 justify-center md:justify-end font-thin'>
+      <ul className='flex flex-row space-x-4 md:space-x-5 justify-center md:justify-end font-thin nav'>
         <li>
-          <a href='#Projects' className='py-1 hover:bg-gray focus:bg-gray rounded-lg'>
+          <a href='#Projects' className='py-1 rounded-lg nav-link nav-projects'>
             Projects
           </a>
         </li>
         <li>
-          <a href='#Skill' className='py-1 hover:bg-gray focus:bg-gray rounded-lg'>
+          <a href='#Skill' className='py-1 rounded-lg nav-link nav-skills'>
             Skills
           </a>
         </li>
         <li>
-          <a href='#Contact' className='py-1 hover:bg-gray focus:bg-gray rounded-lg'>
+          <a href='#Contact' className='py-1 rounded-lg nav-link nav-contact'>
             Contact
           </a>
         </li>
         <li>
-          <a href={RESUME_PATH} target='_blank' rel='noreferrer' className='py-1 pr-3 hover:bg-gray focus:bg-gray resume-btn'>
+          <a href={RESUME_PATH} target='_blank' rel='noreferrer' className='py-1 pr-3 resume-btn'>
             Resume
           </a>
         </li>
