@@ -187,7 +187,6 @@ textarea {
 }
 
 /* CUSTOM-SCROLL BAR */
-
 ::-webkit-scrollbar {
   width: 7.5px;
 }

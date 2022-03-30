@@ -2,7 +2,7 @@ import React from 'react';
 import { ADDRESS, EMAIL_ID, PHONE, FIRST_NAME, GITHUB_USERNAME, LAST_NAME, LINKEDIN_USERNAME } from '../root.link'
 const Contact = () => {
   return (
-    <section className='mb-32 flex flex-wrap md:justify-between md:items-center' id='contact'>
+    <section className='mb-32 flex flex-wrap md:justify-between md:items-center' id='Contact'>
       <div className='w-full md:w-6/12'>
         <img src='./images/bio-pic.jpg' alt='Josh Waay Profile Pic' className='rounded-full w-6/12 h-4/5 opacity-90 m-auto mt-14'></img>
       </div>
