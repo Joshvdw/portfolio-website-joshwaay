@@ -44,7 +44,7 @@ const Proficient = [
         logo: "./images/icons/sass-lang-icon.svg"
     },
     {
-        skill: "Tailwind CSS",
+        skill: "Tailwind",
         logo: "./images/icons/tailwindcss-icon.svg"
     },
     {

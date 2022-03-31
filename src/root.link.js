@@ -7,5 +7,5 @@ export const ADDRESS = 'Northland, Wellington'
 export const EMAIL_ID = 'Joshvdw@live.com';
 export const PHONE = '020 4159 4415';
 export const FRONT_PAGE_NAME = 'Josh Waay';
-export const FRONT_PAGE_DESC = 'I like to build things for the web, using my creativity and technical problem solving skills.'
+export const FRONT_PAGE_DESC = 'I build things for the web, using creativity and technical problem solving skills.'
 

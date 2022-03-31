@@ -10,7 +10,7 @@ function Type(props) {
         ],
         autoStart: true,
         loop: false,
-        pauseFor: 1000000
+        pauseFor: 100000000
       }}
     />
   );

@@ -21,9 +21,12 @@ const Slideshow = (props) => {
       <Fade {...properties}>
         {fadeImages.map((fadeImage, index) => (
           <div className="each-fade" key={index}>
-            <div className="image-container">
-              <img src={fadeImage.url} alt={title}/>
+            <div className="image-container container">
+              <img src={fadeImage.url} alt={title} className="image"/>
             </div>
+            {/* <div class="middle">
+              <div class="text">Visit Website</div>
+            </div> */}
           </div>
         ))}
       </Fade>

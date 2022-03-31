@@ -4,7 +4,7 @@ function Type(props) {
 
   const [show, setShow] = useState(false);
 
-  const { description, github, linkedin} = props
+  const [description, github, linkedin] = props.description
 
   useEffect(() => {
     const timer = setTimeout(() => setShow(true), 4200);
@@ -14,7 +14,7 @@ function Type(props) {
   return (
     show ? 
       <>
-      <p className='tracking-wide leading-relaxed'>{description}</p>
+      <p className='tracking-wide leading-relaxed font-thin'>{description}</p>
         <div className='flex flex-row flex-wrap mt-7'>
           <div className='mr-4'>
             <a href={`https://www.linkedin.com/in/${linkedin}`} target='_blank' rel='noreferrer'>

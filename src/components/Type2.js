@@ -16,12 +16,12 @@ function Type(props) {
       options={{
         strings: [
           `${props.name}`,
-          "a Frontend Web Developer",
-          "a MERN Stack Enthusiast"
+          "a frontend web developer"
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 35
+        deleteSpeed: 30,
+        pauseFor: 2000
       }}
     />
     : <></>

@@ -1,14 +1,14 @@
 import React from 'react';
 import Slideshow from './Slideshow';
 import projects from '../projectData';
-import { GITHUB_USERNAME } from '../root.link';
+// import { GITHUB_USERNAME } from '../root.link';
 
 const Project = () => {
   return (
     <div id="Projects">
-      <section className='mt-48 mb-16 px-5' id='projects'>
+      <section className='my-56 px-5' id='projects'>
         <header className='text-2xl font-bold pt-10'>
-          <h2>Projects</h2>
+          <h2 className='font-light'>Projects</h2>
           <hr className='mt-5 mb-12 opacity-70'/>
         </header>
         <div className='my-7 space-y-24'>
@@ -20,7 +20,7 @@ const Project = () => {
                 </a>
               </picture>
               <div className='flex flex-col overflow-auto  space-y-3 my-3 mx-1 w-full md:w-5/12 '>
-                <h3 className='uppercase font-bold text-lg project-titles'>{project.title}</h3>
+                <h3 className='uppercase font-regular text-lg project-titles'>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className='flex overflow-auto space-x-3 pb-2 md:flex-wrap'>
                   {project.tools.map((disc, index) => (
