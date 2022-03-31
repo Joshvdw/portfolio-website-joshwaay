@@ -1,16 +1,19 @@
 import React from 'react';
 import Slideshow from './Slideshow';
 import projects from '../projectData';
+import { Fade as FadeReveal } from 'react-reveal';
 // import { GITHUB_USERNAME } from '../root.link';
 
 const Project = () => {
   return (
     <div id="Projects">
       <section className='my-56 px-5' id='projects'>
+      <FadeReveal bottom>
         <header className='text-2xl font-bold pt-10'>
           <h2 className='font-light'>Projects</h2>
           <hr className='mt-5 mb-12 opacity-70'/>
         </header>
+        </FadeReveal>
         <div className='my-7 space-y-24'>
           {projects.map((project, index) => (
             <article className='flex flex-wrap md:justify-between md:items-center' key={index}>
@@ -19,6 +22,7 @@ const Project = () => {
                   <Slideshow project={project}/>
                 </a>
               </picture>
+              <FadeReveal bottom>
               <div className='flex flex-col overflow-auto  space-y-3 my-3 mx-1 w-full md:w-5/12 '>
                 <h3 className='uppercase font-regular text-lg project-titles'>{project.title}</h3>
                 <p>{project.description}</p>
@@ -45,17 +49,20 @@ const Project = () => {
                   }
                 </div>
               </div>
+              </FadeReveal>
             </article>
           ))}
         </div>
         
       </section>
+      
       {/* <div className='mx-5'>
         <a href={`https://github.com/${GITHUB_USERNAME}`} target='_blank' rel='noreferrer' className='bg-gray block shadow-lg uppercase border border-gray-500 rounded-lg text-center my-12 p-2 max-w-xs m-auto'>
-          <span>See more on Github</span>
+        <span>See more on Github</span>
         </a>
       </div> */}
     </div>
+
   );
 };
 

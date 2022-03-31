@@ -25,9 +25,7 @@ function App() {
         <Header />
         <main>
           <Hero />
-          <Fade bottom>
-            <Project />
-          </Fade>
+          <Project />
           <About />
           <Fade left>
             <Skill />

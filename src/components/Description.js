@@ -14,8 +14,8 @@ function Type(props) {
   return (
     show ? 
       <>
-      <p className='tracking-wide leading-relaxed font-thin'>{description}</p>
-        <div className='flex flex-row flex-wrap mt-7'>
+      <p className='tracking-wide leading-relaxed font-light'>{description}</p>
+        <div className='flex flex-row flex-wrap mt-7 '>
           <div className='mr-4'>
             <a href={`https://www.linkedin.com/in/${linkedin}`} target='_blank' rel='noreferrer'>
               <span className='mb-2 flex flex-row items-end text-sm'>

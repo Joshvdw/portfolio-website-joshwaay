@@ -1,5 +1,6 @@
 import React from 'react';
-import { Fade } from 'react-slideshow-image';
+import { Fade as FadeShow } from 'react-slideshow-image';
+import { Fade as FadeReveal } from 'react-reveal'
 import 'react-slideshow-image/dist/styles.css'
 
 
@@ -18,18 +19,20 @@ const Slideshow = (props) => {
 
   return (
     <div className="slide-container">
-      <Fade {...properties}>
+      <FadeShow {...properties}>
         {fadeImages.map((fadeImage, index) => (
-          <div className="each-fade" key={index}>
-            <div className="image-container container">
-              <img src={fadeImage.url} alt={title} className="image"/>
+          <FadeReveal bottom>
+            <div className="each-fade" key={index}>
+              <div className="image-container container">
+                <img src={fadeImage.url} alt={title} className="image"/>
+              </div>
+              {/* <div class="middle">
+                <div class="text">Visit Website</div>
+              </div> */}
             </div>
-            {/* <div class="middle">
-              <div class="text">Visit Website</div>
-            </div> */}
-          </div>
+           </FadeReveal>
         ))}
-      </Fade>
+      </FadeShow>
     </div>
   )
 }
