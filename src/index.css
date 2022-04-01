@@ -16,37 +16,31 @@ body {
   line-height: 1.5rem;
   font-weight: 400;
   text-rendering: optimizelegibility;
-  /* letter-spacing: 1px; */
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-h1 {
-  background-color: #4158d0;
-  background-image: linear-gradient(43deg, #a162e8 0%, #f7ce68 46%, #85ffbd 100%);
-
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 h2 {
   font-family: Roboto,
   Arial,
   sans-serif;
-  /* letter-spacing: 1px; */
 }
 
 h3 {
   font-size: 1.4rem !important;
   background-color: #8e9ffa;
   background-image: linear-gradient(45deg, #8e9ffa 0%, #f874ef 10%, #ffcc70 29%, #ffffff 100%);
-  /* letter-spacing: 1px; */
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.montserrat {
+  font-family: Montserrat,
+  Arial,
+  sans-serif;
 }
 
 .patterns {
@@ -55,6 +49,15 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  animation: wobble-y 5.8s 1s linear infinite;
+}
+
+@keyframes wobble-y {
+  0%{transform:translateY(0px)}
+  25%{transform:translateY(6px)}
+  50%{transform:translateY(0px)}
+  75%{transform:translateY(-12px)}
+  100%{transform:translateY(0px)}
 }
 
 img {
@@ -85,8 +88,7 @@ textarea {
   outline: none;
 }
 
-/* Loader */
-
+/* PRE-Loader */
 .sk-folding-cube {
   margin: 20px auto;
   width: 40px;
@@ -186,21 +188,18 @@ textarea {
   }
 }
 
-/* CUSTOM-SCROLL BAR */
+/* CUSTOM-COLORED-SCROLL BAR */
 ::-webkit-scrollbar {
   width: 7.5px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   background:rgb(18, 18, 18);
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(43deg, #85ffbd 0%, #f7ce68 46%, #a162e8 100%);
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(43deg, #a162e8 0%, #f7ce68 46%, #85ffbd 100%);

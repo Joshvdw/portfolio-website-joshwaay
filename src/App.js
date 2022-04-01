@@ -6,7 +6,6 @@ const Hero = lazy(() => import('./components/Hero'));
 const Project = lazy(() => import('./components/Project'));
 const Skill = lazy(() => import('./components/Skill'));
 const Contact = lazy(() => import('./components/Contact'));
-const About = lazy(() => import('./components/About'))
 const Footer = lazy(() => import('./components/Footer'))
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
         <main>
           <Hero />
           <Project />
-          <About />
           <Fade left>
             <Skill />
           </Fade>

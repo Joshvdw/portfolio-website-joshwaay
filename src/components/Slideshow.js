@@ -6,15 +6,17 @@ import 'react-slideshow-image/dist/styles.css'
 
 const Slideshow = (props) => {
   
-  const { images, title } = props.project
+  const { images, title, link } = props.project
+
+  const titleClass = title.replace(/\s+/g, '-').toLowerCase();
 
   const fadeImages = [...images]
   
   const properties = {
     arrows: false,
-    duration: 1500,
-    transitionDuration: 750,
-    pauseOnHover: false
+    duration: 1200,
+    transitionDuration: 800,
+    pauseOnHover: true
   }
 
   return (
@@ -23,12 +25,12 @@ const Slideshow = (props) => {
         {fadeImages.map((fadeImage, index) => (
           <FadeReveal bottom>
             <div className="each-fade" key={index}>
-              <div className="image-container container">
-                <img src={fadeImage.url} alt={title} className="image"/>
+              <div className={`image-container ${titleClass}-container`}>
+                <img src={fadeImage.url} alt={title} className={`${titleClass}-image`}/>
+              <div class="middle">
+                <div class="text">Visit {link ? "Live Site" : "Project Story"}</div>
               </div>
-              {/* <div class="middle">
-                <div class="text">Visit Website</div>
-              </div> */}
+              </div>
             </div>
            </FadeReveal>
         ))}

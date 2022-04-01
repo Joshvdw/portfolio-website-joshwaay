@@ -10,7 +10,6 @@ const Contact = () => {
         <header className='px-5 text-2xl font-bold pt-10'>
           <h2 className='font-light'>Contact</h2>
           <hr className='mt-2 mb-8 opacity-70'/>
-          {/* <br/> */}
           <p className='text-base font-thin'>Please feel free to reach out to me or connect via one of my socials, I would love to hear from you!</p>
         </header>
         <div className='md:mx-6 flex flex-col flex-wrap md:flex-row justify-between'>
@@ -18,29 +17,25 @@ const Contact = () => {
             <div>
               <p className='font-semibold'>{FIRST_NAME} {LAST_NAME}</p>
               <p className='font-thin'>{ADDRESS}</p>
-              <a href={`mailto: ${EMAIL_ID}`} className='border-b-2 mt-3 inline-block border-gray-500'>
+              <a href={`mailto: ${EMAIL_ID}`} className='mb-2 mt-3 inline-block border-gray-500 glow'>
                 {EMAIL_ID}
               </a>
               <p className='font-thin'>{PHONE}</p>
             </div>
-            {/* <a className='border-b-2 mt-3 inline-block border-gray-500' href={RESUME_PATH} target='_blank' rel='noreferrer'>
-              Resume
-            </a> */}
+
             <div className='flex flex-row flex-wrap mt-7'>
-              <div className='mr-4'>
+              <div className=''>
                 <a href={`https://www.linkedin.com/in/${LINKEDIN_USERNAME}`} target='_blank' rel='noreferrer'>
-                  <span className='mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm'>
-                    <img src='./images/icons/linkedin.svg' alt='' width='24px' height='24px' className='mr-1' />
-                    LinkedIn
+                  <span className='mb-2 flex flex-row items-end pr-2 text-sm'>
+                    <img src='./images/icons/linkedin.svg' alt='' width='24px' height='24px' className='mr-1 enlarge-icon' />
                   </span>
                 </a>
               </div>
 
-              <div className='mr-4'>
+              <div className=''>
                 <a href={`https://github.com/${GITHUB_USERNAME}`} target='_blank' rel='noreferrer'>
-                  <span className='mb-2 flex flex-row items-end border border-gray-500 p-2 rounded-lg text-sm'>
-                    <img src='./images/icons/github.svg' alt='' width='24px' height='24px' className='mr-1' />
-                    GitHub
+                  <span className='mb-2 flex flex-row items-end pl-2 text-sm'>
+                    <img src='./images/icons/github.svg' alt='' width='24px' height='24px' className='mr-1 enlarge-icon' />
                   </span>
                 </a>
               </div>

@@ -32,8 +32,6 @@ const Hero = () => {
             <Description description= {[FRONT_PAGE_DESC, GITHUB_USERNAME, LINKEDIN_USERNAME]}/>
           </div>
         </div>
-        {/* <button className='contact-btn'>Contact</button> */}
-
       </div>
     </section>
   );

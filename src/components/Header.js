@@ -1,19 +1,8 @@
 import React from 'react';
 import { RESUME_PATH } from '../root.link';
+import './style.ex.css'
 
 const Header = () => {
-  // function openNav() {
-  //   document.getElementById("mySidenav").style.width = "250px";
-  // }
-
-  // /* Set the width of the side navigation to 0 */
-  // function closeNav() {
-  //   document.getElementById("mySidenav").style.width = "0";
-  // } 
-  // function closeNav (e) {
-  //   e.preventDefault()
-  //   console.log('Button Worked');
-  // }
   
   return (
     <>
@@ -41,19 +30,6 @@ const Header = () => {
         </li>
       </ul>
     </nav>
-    {/* <nav className='space-x-10' id='Header'> */}
-    {/* <span onclick={openNav()}>open</span> */}
-    {/* <div id="mySidenav" className="sidenav"> */}
-      {/* <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a> */}
-      {/* <button onClick={closeNav} className="closebtn">hello</button>
-      <a href='#Header' onClick={closeNav} className="">hello</a>
-      <a href="#Projects">Projects</a>
-      <a href="#Skills">Skills</a>
-      <a href="#Contact">Contact</a>
-      <a href="#Resume">Resume</a>
-    </div>
-
-    </nav> */}
     </>
   );
 };
