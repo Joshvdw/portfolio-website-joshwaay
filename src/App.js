@@ -21,7 +21,9 @@ function App() {
       }
     >
       <div className='App container mt-5 mx-auto max-w-screen-lg bg-black'>
-        <Header />
+        <Fade top>
+          <Header />
+        </Fade>
         <main>
           <Hero />
           <Project />

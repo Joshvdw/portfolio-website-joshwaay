@@ -17,7 +17,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   height: 144px;
-  animation: glow-effect 8s ease-in-out infinite alternate;
+  animation: glow-effect 6s ease-in-out infinite alternate;
 }
 
 @keyframes glow-effect {
@@ -275,9 +275,19 @@ HEADER DESCRIPTION / TAGLINE FADE UP FX
 
 .text {
   background: linear-gradient(43deg, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 180, 1) 46%, rgba(0, 100, 200, 1) 100%);
+  background-size: 300%;
+  background-clip: border-box;
+  animation: glow-btn 5s ease-in-out infinite;
   border-radius: 2%;
   padding: 16px 32px;
   font-family: Roboto;
+}
+
+/* Glowing button project link */
+@keyframes glow-btn {
+  0% { background-position: 0px 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0px 50%; }
 }
 
 /* -------------------------------- 

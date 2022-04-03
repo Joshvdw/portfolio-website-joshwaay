@@ -23,7 +23,7 @@ const Project = () => {
               </picture>
               <FadeReveal bottom>
               <div className='flex flex-col overflow-hidden space-y-3 my-3 mx-1 w-full md:w-5/12 '>
-                <h3 className='uppercase font-regular text-lg project-titles'>{project.title}</h3>
+                <h3 className='uppercase font-regular text-lg project-titles glow-bg'>{project.title}</h3>
                 <p className="font-light">{project.description}</p>
                 <div className='flex overflow-auto space-x-3 pb-2 md:flex-wrap'>
                   {project.tools.map((disc, index) => (
