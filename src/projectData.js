@@ -1,31 +1,31 @@
 const projects = [
-  // {
-  //   title: 'Lotje McDonald Photography',
-  //   images: [
-  //     {
-  //       url: './images/projects/lotje-mcdonald.jpg'
-  //     },
-  //     {
-  //       url: './images/projects/lotje-mcdonald-2.jpg'
-  //     },
-  //     {
-  //       url: './images/projects/lotje-mcdonald-3.jpg'
-  //     },
-  //     {
-  //       url: './images/projects/lotje-mcdonald-4.jpg'
-  //     },
-  //     {
-  //       url: './images/projects/lotje-mcdonald-5.jpg'
-  //     },
-  //     {
-  //       url: './images/projects/lotje-mcdonald-6.jpg'
-  //     }
-  //   ],
-  //   description: "Website built with a custom child theme designed for a professional photographer based in AU. This project was paid freelance contract work.",
-  //   tools: ['Wordpress', 'WooCommerce', 'SEO'],
-  //   github: 'https://github.com/Joshvdw/lotje-mcdonald-photography',
-  //   link: 'https://lotjemcdonaldphotography.com.au',
-  // },
+  {
+    title: 'Lotje McDonald Photography',
+    images: [
+      {
+        url: './images/projects/lotje-mcdonald.jpg'
+      },
+      {
+        url: './images/projects/lotje-mcdonald-2.jpg'
+      },
+      {
+        url: './images/projects/lotje-mcdonald-3.jpg'
+      },
+      {
+        url: './images/projects/lotje-mcdonald-4.jpg'
+      },
+      {
+        url: './images/projects/lotje-mcdonald-5.jpg'
+      },
+      {
+        url: './images/projects/lotje-mcdonald-6.jpg'
+      }
+    ],
+    description: "Website built with a custom child theme designed for a professional photographer based in AU.", // <-- add this later: This project was paid freelance contract work.
+    tools: ['Wordpress', 'WooCommerce', 'SEO'],
+    github: 'https://github.com/Joshvdw/lotje-mcdonald-photography',
+    link: 'https://lotjemcdonaldphotography.com.au',
+  },
   {
     title: 'Torotoro',
     images: [

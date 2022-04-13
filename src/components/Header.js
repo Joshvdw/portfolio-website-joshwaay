@@ -23,11 +23,11 @@ const Header = () => {
             Contact
           </a>
         </li>
-        {/* <li>
+        <li>
           <a href={RESUME_PATH} target='_blank' rel='noreferrer' className='resume-btn'>
             Resume
           </a>
-        </li> */}
+        </li>
       </ul>
     </nav>
     </>
