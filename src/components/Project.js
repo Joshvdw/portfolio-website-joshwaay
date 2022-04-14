@@ -38,9 +38,11 @@ const Project = () => {
                     <img src='./images/icons/behance.svg' alt='link to behance page' width='24px' height='24px' className='behance-icon enlarge-icon'/>
                   </a>
                   }
+                  {project.github &&
                   <a href={project.github} target='_blank' rel='noreferrer'>
                     <img src='./images/icons/github.svg' alt='link to github page' width='24px' height='24px' className='enlarge-icon'/>
                   </a>
+                  }
                   {project.link &&
                   <a href={project.link} target='_blank' rel='noreferrer'>
                     <img src='./images/icons/external-link.svg' alt='link to live website' width='24px' height='24px' className='enlarge-icon'/>

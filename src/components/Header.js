@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
     <nav className='space-x-10' id='Header'>
-      <ul className='flex flex-row space-x-2 md:space-x-2 justify-end md:justify-end font-thin nav'>
+      <ul className='flex flex-row space-x-2 md:space-x-4 justify-end md:justify-end font-thin nav'>
         <li>
           <a href='#Projects' className=' rounded-lg nav-link nav-projects'>
             Projects

@@ -27,8 +27,8 @@ const Slideshow = (props) => {
             <div className="each-fade" key={index}>
               <div className={`image-container ${titleClass}-container`}>
                 <img src={fadeImage.url} alt={title} className={`${titleClass}-image`}/>
-              <div class="middle">
-                <div class="text">Visit {link ? "Live Site" : "Project Story"}</div>
+              <div className="middle">
+                <div className="text">Visit {link ? "Live Site" : "Project Story"}</div>
               </div>
               </div>
             </div>

@@ -1,4 +1,27 @@
 const projects = [
+    {
+    title: 'Oscar Bodhi Perry',
+    images: [
+      {
+        url: './images/projects/oscar-1.png'
+      },
+      {
+        url: './images/projects/oscar-2.png'
+      },
+      {
+        url: './images/projects/oscar-3.png'
+      },
+      {
+        url: './images/projects/oscar-4.png'
+      },
+      {
+        url: './images/projects/oscar-5.png'
+      }
+    ],
+    description: "Created a website for designer, photographer & maker, Oscar Bodhi Perry using Webflow. This project was paid freelance contract work.",
+    tools: ['Webflow'],
+    link: 'https://www.oscar-bodhi.com',
+  },
   {
     title: 'Lotje McDonald Photography',
     images: [
@@ -21,7 +44,7 @@ const projects = [
         url: './images/projects/lotje-mcdonald-6.jpg'
       }
     ],
-    description: "Website built with a custom child theme designed for a professional photographer based in AU.", // <-- add this later: This project was paid freelance contract work.
+    description: "Website built with a custom child theme designed for a professional photographer based in AU. This project was paid freelance contract work.",
     tools: ['Wordpress', 'WooCommerce', 'SEO'],
     github: 'https://github.com/Joshvdw/lotje-mcdonald-photography',
     link: 'https://lotjemcdonaldphotography.com.au',
